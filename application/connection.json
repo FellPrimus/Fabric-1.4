@@ -15,7 +15,7 @@
     "channels": {
         "channelsales1": {
             "orderers": [
-                "orderer.acornpub.com"
+                "orderer1.acornpub.com"
             ],
             "peers": {
                 "peer0.sales1.acornpub.com": {}
@@ -40,14 +40,14 @@
         }
     },
     "orderers": {
-        "orderer.acornpub.com": {
+        "orderer1.acornpub.com": {
             "url": "grpc://localhost:7050",
             "grpcOptions":{
-                "ssl-target-name-override":"orderer.acornpub.com",
+                "ssl-target-name-override":"orderer1.acornpub.com",
                 "grpc-max-send-message-length": -1
             },
             "tlsCACerts": {
-                "path": "../../basic-network/crypto-config/ordererOrganizations/acornpub.com/orderers/orderer.acornpub.com/msp/tlscacerts/acornpub.com-cert.pem"
+                "path": "../../basic-network/crypto-config/ordererOrganizations/acornpub.com/orderers/orderer1.acornpub.com/msp/tlscacerts/tlsca.acornpub.com-cert.pem"
             }
         }
     },
